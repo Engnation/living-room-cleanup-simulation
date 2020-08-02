@@ -47,4 +47,8 @@ To launch the living room environment with a hobo robot:
 
 `roslaunch living_room_sim_1 living_room.launch`
 
+<img src="Living_Room_With_HOBO_Bot.png"
+     alt="living room with HOBO bot"
+     style="float: left; margin-right: 10px;" />
+
 (Note, you must have the hobo package installed in parallel)
