@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+    <world name="my_world">
+
+        <include> <!-- Add in a light source -->
+            <uri>model://sun</uri>
+        </include>
+
+        <include> <!-- Add your custom model -->
+            <!--<uri>model://living_room_floors_and_wall</uri>-->
+            <!--<uri>//home/catkin_ws/src/living_room_sim_1/models/living_room_floors_and_wall</uri>-->
+            <uri>model://living_room_floors_and_wall</uri>
+            <name>living_room</name> 
+            <!-- XYZ Role Pitch Yaw-->
+            <pose>0 0 0.001 0 0 0</pose>
+            <static>true</static>
+        </include>
+
+        <!-- additonal objects for testing-->
+        <!--<include>-->
+        <!--    <uri>model://postbox</uri> -->
+            <!-- x, y, z, roll, pitch, yaw, in radians-->
+        <!--    <pose>-1 -1 1 0 0 0</pose> -->
+        <!--    <static>true</static> -->
+        <!--</include> -->
+
+        <!--<include>-->
+        <!--    <uri>model://bus</uri> -->
+        <!--    <pose>-10 -10 .25 0 0 2</pose> -->
+        <!--    <static>false</static> -->
+        <!--</include>-->
+
+        <include>
+            <uri>model://ground_plane</uri>
+            <pose>0 0 0 0 0 0</pose>
+            <static>true</static>
+        </include>
+        
+    </world>
+</sdf>

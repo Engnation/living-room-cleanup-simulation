@@ -1,0 +1,14 @@
+<launch>
+    <!-- Robot pose -->
+  <arg name="x" default="-2"/>
+  <arg name="y" default="2"/>
+  <arg name="z" default="1"/>
+  <arg name="roll" default="0"/>
+  <arg name="pitch" default="0"/>
+  <arg name="yaw" default="0"/>
+<param name="robot_description" textfile="$(find hobo_description)/urdf/hobo_description.urdf" />
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(find living_room_sim_1)/worlds/my_world.world"/>        
+    </include>
+    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" respawn="false" args="-param robot_description -urdf -model hobo -x $(arg x) -y $(arg y) -z $(arg z) -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)"/>
+</launch>

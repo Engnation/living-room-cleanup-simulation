@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+    <model name="living_room_shell">
+        <static>true</static>
+        <link name="living_room_shell_link">
+            <collision name="living_room_shell_collision">
+                <geometry>
+                <!--<box>
+                        <size>1.70 0.51 0.55</size>
+                    </box> -->
+                    <mesh>
+                        <uri>model://living_room_floors_and_wall/meshes/Living_Room.dae</uri>
+                    </mesh>
+                </geometry> 
+            </collision>
+
+            <visual name="living room shell mesh">
+                <cast_shadows>true</cast_shadows>
+                <geometry>
+                    <mesh>
+                        <uri>model://living_room_floors_and_wall/meshes/Living_Room.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+        </link>
+    </model>
+</sdf>
