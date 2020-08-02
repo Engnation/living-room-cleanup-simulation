@@ -29,7 +29,7 @@ To run the simulation, this package can be cloned directly into the user's catki
 
  
 
-export GAZEBO_MODEL_PATH=~/catkin_ws/src/living_room_sim_1/models:${GAZEBO_MODEL_PATH}  
+`export GAZEBO_MODEL_PATH=~/catkin_ws/src/living_room_sim_1/models:${GAZEBO_MODEL_PATH}` 
 
  
 
