@@ -2,6 +2,13 @@
 <sdf version="1.5">
     <world name="my_world">
 
+        <gui>
+            <camera name="user_camera">
+                <pose>2.02589 6.16289 8.59617 0 1.001 -2.528</pose>
+                <hfov>90</hfov>
+            </camera>
+        </gui>
+
         <include> <!-- Add in a light source -->
             <uri>model://sun</uri>
         </include>
