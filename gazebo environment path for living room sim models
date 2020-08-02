@@ -1,5 +1,0 @@
-export GAZEBO_MODEL_PATH=~/catkin_ws/src/living_room_sim_1/models:${GAZEBO_MODEL_PATH} 
-
-suggestion use .env file for setting the environment variable for only when you are using the project
-
- 
