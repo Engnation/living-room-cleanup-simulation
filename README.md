@@ -37,10 +37,10 @@ export GAZEBO_MODEL_PATH=~/catkin_ws/src/living_room_sim_1/models:${GAZEBO_MODEL
 
 To launch an empty living room environment:
 
-roslaunch living_room_sim_1 living_room.launch               
+'roslaunch living_room_sim_1 living_room.launch'               
 
 To launch the living room environment with a hobo robot:
 
-roslaunch living_room_sim_1 living_room.launch
+'roslaunch living_room_sim_1 living_room.launch'
 
 (Note, you must have the hobo package installed in parallel)
