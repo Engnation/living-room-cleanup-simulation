@@ -16,6 +16,14 @@
             <static>true</static>
         </include>
 
+        <!-- The bookshelf in the corner of the room -->
+        <include>
+            <uri>model://bookshelf</uri>
+            <!-- x, y, z, roll, pitch, yaw, in radians-->
+            <pose>-3.09 4.5 0.001 0 0 1.5708 </pose> -->
+            <static>false</static>
+        </include>
+
         <!-- additonal objects for testing-->
         <!--<include>-->
         <!--    <uri>model://postbox</uri> -->
