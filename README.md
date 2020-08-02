@@ -25,7 +25,7 @@ Currently this package is being developed under ROS Melodic Version: 1.14.6 and 
 
  
 
-To run the simulation, this package can be cloned directly into the user's catkin workspace. In order to load the SDF assets, the following environment variable must be added to the user's .bashrc file: 
+To run the simulation, this package can be cloned directly into the user's catkin workspace src directory. In order to load the SDF assets, the following environment variable must be added to the user's .bashrc file: 
 
  
 
