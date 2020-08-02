@@ -39,7 +39,9 @@ To launch an empty living room environment:
 
 `roslaunch living_room_sim_1 living_room.launch`               
 
-![alt text](https://github.com/Engnation/living-room-cleanup-simulation/Empty_Living_Room.png "Empty living room")
+<img src="Empty_Living_Room.png"
+     alt="Empty living room"
+     style="float: left; margin-right: 10px;" />
 
 To launch the living room environment with a hobo robot:
 
