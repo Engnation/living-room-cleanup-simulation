@@ -68,7 +68,7 @@
     <!--<gazebo_ros                                                                 
         gazebo_plugin_path="${prefix}/lib"
         gazebo_model_path="${prefix}/.." /> -->
-    GAZEBO_MODEL_PATH=~/catkin_ws/src/living_room_sim_1/models:${GAZEBO_MODEL_PATH}
+    <!--GAZEBO_MODEL_PATH=~/catkin_ws/src/living_room_sim_1/models:${GAZEBO_MODEL_PATH}-->
 
   </export>
 </package>
