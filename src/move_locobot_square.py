@@ -63,4 +63,4 @@ if __name__ == '__main__':
     try: 
         sh.move_square() 
     except rospy.ROSInterruptException: 
-        Pass 
+        pass 
