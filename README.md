@@ -45,7 +45,7 @@ To launch an empty living room environment:
      alt="Empty living room"
      style="float: left; margin-right: 10px;" />
 
-To launch the living room environment with a hobo robot:
+To launch the living room environment with a simple hobo robot:
 
 `roslaunch living_room_sim_1 living_room_hobo.launch`
 
