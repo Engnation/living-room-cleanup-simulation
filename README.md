@@ -47,10 +47,20 @@ To launch an empty living room environment:
 
 To launch the living room environment with a hobo robot:
 
-`roslaunch living_room_sim_1 living_room.launch`
+`roslaunch living_room_sim_1 living_room_hobo.launch`
 
 <img src="Living_Room_With_HOBO_Bot.png"
      alt="living room with HOBO bot"
      style="float: left; margin-right: 10px;" />
 
-(Note, you must have the hobo package installed in parallel)
+(Note, you must have the hobo package installed in parallel with this ROS package)
+
+To launch the living room environment with a hobo robot:
+
+`roslaunch living_room_sim_1 living_room_locobot.launch`
+
+<img src="Living_Room_With_LOCOBOT.png"
+     alt="living room with locobot"
+     style="float: left; margin-right: 10px;" />
+
+(Note, you must have the locobot package installed in parallel with this ROS package)
