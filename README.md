@@ -55,7 +55,7 @@ To launch the living room environment with a simple hobo robot:
 
 (Note, you must have the hobo package installed in parallel with this ROS package)
 
-To launch the living room environment with a hobo robot:
+To launch the living room environment with a locobot robot:
 
 `roslaunch living_room_sim_1 living_room_locobot.launch`
 
