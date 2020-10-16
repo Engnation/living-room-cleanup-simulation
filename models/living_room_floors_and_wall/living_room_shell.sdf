@@ -2,6 +2,7 @@
 <sdf version="1.5">
     <model name="living_room_shell">
         <static>true</static>
+        <self_collide>true</self_collide>
         <link name="living_room_shell_link">
             <collision name="living_room_shell_collision">
                 <geometry>
