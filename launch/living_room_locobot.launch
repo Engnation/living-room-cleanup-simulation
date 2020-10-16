@@ -8,10 +8,12 @@
   <arg name="yaw" default="0"/>
 
 <param name="robot_description" textfile="$(find locobot_description)/urdf/cmu_locobot_description.urdf" />    
-    <include file="$(find gazebo_ros)/launch/empty_world.launch" >
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <!--file="$(find locobot_gazebo)/launch/gazebo_movit_main.launch" > -->
+    <!--<include file="$(find locobot_gazebo)/launch/gazebo_movit_main.launch" >-->
         <arg name="world_name" value="$(find living_room_sim_1)/worlds/my_world.world"/>
     </include>
-        
+
   <node
     name="tf_footprint_base"
     pkg="tf"
