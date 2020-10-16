@@ -32,6 +32,38 @@
             <static>true</static>
         </include>
 
+        <include> <!-- Add your custom model -->
+            <!--<uri>model://living_room_floors_and_wall</uri>-->
+            <!--<uri>//home/catkin_ws/src/living_room_sim_1/models/living_room_floors_and_wall</uri>-->
+            <uri>model://ABC_BLOCK</uri>
+            <name>ABC_BLOCK_1</name> 
+            <!-- XYZ Role Pitch Yaw-->
+            <pose>-1.75 3.5 0.026906 0 0 0.046622</pose>
+            <static>false</static>
+        </include>
+       
+        <include> <!-- Add your custom model -->
+            <!--<uri>model://living_room_floors_and_wall</uri>-->
+            <!--<uri>//home/catkin_ws/src/living_room_sim_1/models/living_room_floors_and_wall</uri>-->
+            <uri>model://ABC_BLOCK</uri>
+            <name>ABC_BLOCK_2</name> 
+            <!-- XYZ Role Pitch Yaw-->
+            <pose>-1.75 3.45 0.026906 0 0 0</pose>
+            <static>false</static>
+        </include>
+
+        <include> <!-- Add your custom model -->
+            <!--<uri>model://living_room_floors_and_wall</uri>-->
+            <!--<uri>//home/catkin_ws/src/living_room_sim_1/models/living_room_floors_and_wall</uri>-->
+            <uri>model://ABC_BLOCK</uri>
+            <name>ABC_BLOCK_3</name> 
+            <!-- XYZ Role Pitch Yaw-->
+            <pose>-1.75 3.475 0.036906 0.5 0 0.3</pose>
+            <static>false</static>
+        </include>
+
+            <!--<pose>-1.75 3.5 0.001 0 0 0</pose>-->
+            
         <!-- The bookshelf in the corner of the room -->
         <include>
             <uri>model://bookshelf</uri>
