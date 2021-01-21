@@ -16,7 +16,8 @@ to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
             <collision name="ABC_BLOCK_collision">
                 <geometry>
                 	<box>
-                        <size>0.03 0.03 0.03</size>
+                        <size>0.06 0.06 0.06</size>
+                        <scale> 2 2 2 </scale>
                     </box>
                     <!--<mesh>
                         <uri>model://ABC_BLOCK/meshes/model.dae</uri>
@@ -29,6 +30,7 @@ to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
                 <geometry>
                     <mesh>
                         <uri>model://ABC_BLOCK/meshes/model.dae</uri>
+                        <scale> 2 2 2 </scale>
                     </mesh>
                 </geometry>
             </visual>
