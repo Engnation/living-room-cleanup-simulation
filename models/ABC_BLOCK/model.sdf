@@ -13,7 +13,20 @@ to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
         <static>true</static>
 		<self_collide>true</self_collide>
         <link name="link_0">
+            <self_collide>1</self_collide>
+                <inertial>
+                    <inertia>
+                    <ixx>2.50772e-05</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>2.50772e-05</iyy>
+                    <iyz>0</iyz>
+                    <izz>2.50772e-05</izz>
+                    </inertia>
+                    <mass>0.0601</mass>
+                </inertial>
             <collision name="ABC_BLOCK_collision">
+                <pose frame=''>-0 -0.031 0 0 -0 0</pose>
                 <geometry>
                 	<box>
                         <size>0.06 0.06 0.06</size>
@@ -33,7 +46,53 @@ to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
                         <scale> 2 2 2 </scale>
                     </mesh>
                 </geometry>
+                <surface>
+                    <friction>
+                        <ode>
+                        <mu>10000</mu>
+                        <mu2>10000</mu2>
+                        <fdir1>0 0 0</fdir1>
+                        <slip1>0</slip1>
+                        <slip2>0</slip2>
+                        </ode>
+                        <torsional>
+                        <coefficient>1000</coefficient>
+                        <patch_radius>0</patch_radius>
+                        <surface_radius>0</surface_radius>
+                        <use_patch_radius>1</use_patch_radius>
+                        <ode>
+                            <slip>0</slip>
+                        </ode>
+                        </torsional>
+                    </friction>
+                    <bounce>
+                        <restitution_coefficient>0</restitution_coefficient>
+                        <threshold>1e+06</threshold>
+                    </bounce>
+                    <contact>
+                        <collide_without_contact>0</collide_without_contact>
+                        <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+                        <collide_bitmask>1</collide_bitmask>
+                        <ode>
+                        <soft_cfm>0</soft_cfm>
+                        <soft_erp>0.2</soft_erp>
+                        <kp>1e+13</kp>
+                        <kd>1</kd>
+                        <max_vel>0.01</max_vel>
+                        <min_depth>0</min_depth>
+                        </ode>
+                        <bullet>
+                        <split_impulse>1</split_impulse>
+                        <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+                        <soft_cfm>0</soft_cfm>
+                        <soft_erp>0.2</soft_erp>
+                        <kp>1e+13</kp>
+                        <kd>1</kd>
+                        </bullet>
+                    </contact>
+                </surface>
             </visual>
         </link>
     </model>
 </sdf>
+
