@@ -7,7 +7,8 @@ class PublishData():
 
     def __init__(self): 
 
-        self.pub = rospy.Publisher("/mobile_base/commands/velocity", Twist, queue_size=1) 
+        #self.pub = rospy.Publisher("/mobile_base/commands/velocity", Twist, queue_size=1)
+        self.pub = rospy.Publisher("/cmd_vel", Twist, queue_size=1) 
         self.msg = Twist() 
         self.msg.linear.x = 0.2 
         self.rate = rospy.Rate(1)   
