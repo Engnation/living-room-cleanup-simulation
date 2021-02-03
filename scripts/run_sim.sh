@@ -1,6 +1,7 @@
 #!/bin/bash
 
-export GAZEBO_MODEL_PATH=~/catkin_ws/src/living_room_sim_1/models:~/.gazebo/models:${GAZEBO_MODEL_PATH}
+#export GAZEBO_MODEL_PATH=~/catkin_ws/src/living_room_sim_1/models:~/.gazebo/models:${GAZEBO_MODEL_PATH}
+export GAZEBO_MODEL_PATH=~/catkin_ws/src/living_room_sim_1/models:${GAZEBO_MODEL_PATH}
 export ROS_PACKAGE_PATH="/home/$USER/catkin_ws/src:/home/$USER/low_cost_ws/src:/opt/ros/melodic/share"
 
 source ~/catkin_ws/devel/setup.bash
