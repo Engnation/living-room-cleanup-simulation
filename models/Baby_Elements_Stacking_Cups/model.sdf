@@ -11,6 +11,19 @@ to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
   <model name="Baby_Elements_Stacking_Cups">
     <self_collide>true</self_collide>
     <link name="link_0">
+      <self_collide>1</self_collide>
+      <!--estimated values for moments of inertia and mass-->
+                <inertial>
+                    <inertia>
+                    <ixx>0.001403958333333</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>0.001403958333333</iyy>
+                    <iyz>0</iyz>
+                    <izz>0.00014125</izz>
+                    </inertia>
+                    <mass>0.1</mass>
+                </inertial>
       <visual name="visual">
       <cast_shadows>true</cast_shadows>
         <geometry>
