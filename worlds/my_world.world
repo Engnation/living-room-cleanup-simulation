@@ -126,7 +126,7 @@
             <pose>0 0 0.001 0 0 0</pose>
             <static>true</static>
         </include>
-
+        
         <include> <!-- Add your custom model -->
             <!--<uri>model://living_room_floors_and_wall</uri>-->
             <!--<uri>//home/catkin_ws/src/living_room_sim_1/models/living_room_floors_and_wall</uri>-->
@@ -159,7 +159,7 @@
             <pose>-1.72 1 0.036906 -3.14 0 -2.14</pose>            
             <static>false</static>
         </include>
-
+        
         <include> <!-- Add your custom model -->
             <!--<uri>model://living_room_floors_and_wall</uri>-->
             <!--<uri>//home/catkin_ws/src/living_room_sim_1/models/living_room_floors_and_wall</uri>-->
@@ -176,9 +176,85 @@
         <include>
             <uri>model://bookshelf</uri>
             <!-- x, y, z, roll, pitch, yaw, in radians-->
-            <pose>-3.09 4.5 0.001 0 0 1.5708 </pose> -->
+            <pose>-3.09 4.5 0.001 0 0 1.5708 </pose>
             <static>false</static>
         </include>
+
+         <!-- A box for picking up -->
+        
+        <model name='unit_box'>
+            <!-- pose is right infront of the robot's gripper when it spawns-->
+            <pose frame=''>-1.719416 1.994145 0.025252 0 0 0</pose>
+            <link name='link'>
+                <inertial>
+                <mass>0.06018</mass>
+                <inertia>
+                    <ixx>2.50772E-05</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>2.50772E-05</iyy>
+                    <iyz>0</iyz>
+                    <izz>2.50772E-05</izz>
+                </inertia>
+                </inertial>
+                <collision name='collision'>
+                <geometry>
+                    <box>
+                    <size>0.05 0.05 0.05</size>
+                    </box>
+                </geometry>
+                <max_contacts>100</max_contacts>
+                <surface>
+                    <contact>
+                    <ode/>
+                    </contact>
+                    <bounce/>
+                    <friction>
+                        <ode>
+                            <mu>1000</mu>
+                            <mu2>1000</mu2>
+                            <fdir1>1000 1000 1000</fdir1>
+                            <slip1> 0 </slip1>
+                            <slip2> 0 </slip2>
+                        </ode>
+                        <bullet>
+                            <friction>1</friction>
+                            <friction2>1</friction2>
+                        </bullet>
+                        <torsional>
+                            <ode>
+                                <coefficient>1700</coefficient>
+                                <slip>0</slip>
+                            </ode>
+                        </torsional>
+                    </friction>
+                </surface>
+                </collision>
+                <visual name='visual'>
+                <geometry>
+                    <box>
+                    <size>0.05 0.05 0.05</size>
+                    </box>
+                </geometry>
+                <material>
+                    <script>
+                    <name>Gazebo/Grey</name>
+                    <uri>file://media/materials/scripts/gazebo.material</uri>
+                    </script>
+                </material>
+                </visual>
+                <self_collide>0</self_collide>
+                <enable_wind>0</enable_wind>
+                <kinematic>0</kinematic>
+            </link>
+        </model>
+            
+                <!-- x, y, z, roll, pitch, yaw, in radians-->
+                <!--<pose>-1.719416 1.994145 0.025252 0 0 0 </pose>-->
+                <!--<size> 0.048503 0.048503 0.048503 </size>-->
+                <!--<static>false</static>-->
+            
+        
 
         <!-- additonal objects for testing-->
         <!--<include>-->
