@@ -3,6 +3,10 @@
 <img src="robot_grasp.gif"
      alt="LoCoBot trying to grasp"
      style="float: left; margin-right: 10px;" /> 
+<img src="robot_pointcloud.gif"
+     alt="Correctly oriented LoCoBot PointCloud2 in RVIZ"
+     style="float: right; margin-right: 10px;" /> 
+      
 
 This repository contains a ROS package for a project that is being created to consolidate learning and practice applying machine learning, computer vision, and robotics concepts. The goal of this project is to create a simulation that mirrors a real life environment (such as the authors living room) and to run a simulated robot in the environment to demonstrate a number of machine learning and computer vision tasks. 
 
