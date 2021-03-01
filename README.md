@@ -12,7 +12,7 @@ This repository contains a ROS package for a project that is being created to pr
 
 The project under development consists of a simulated environment that incorporates the following: 
 
-* A close likenss of the authors living room using custom modeled SDF files
+* A close likenss of the author's living room using custom modeled SDF files
 
 * A pre-made model of a mobile manipulator robot (LoCoBot) from the Facebook research Pyrobot package  
 
