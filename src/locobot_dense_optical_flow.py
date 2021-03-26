@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-#ROS node for LoCoBot to find dense optical flow to visualize motion
+#ROS node for LoCoBot to use dense optical flow to visualize motion
 #https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_video/py_lucas_kanade/py_lucas_kanade.html
 
 import rospy
