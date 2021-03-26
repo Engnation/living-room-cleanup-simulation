@@ -78,7 +78,8 @@ class PointTracker(object):
 def main():
     rospy.init_node('point_following_node', anonymous=True)
     print("pont following node initiated")
-    line_follower_object = PointTracker()
+
+    point_follower_object = PointTracker()
 
     try:
         rospy.spin()
